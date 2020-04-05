@@ -1,0 +1,2861 @@
+
+<!DOCTYPE html>
+<html lang="ru" class="js">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link href="/css/themify-icons.css" rel="stylesheet"> 
+
+    <title>Nvuti - Официальный сайт. Нвути сервис мгновенных игр.</title>
+    <meta name="description" content="Nvuti - Настоящий сайт Нвути. Все комиссии берем на себя, бонус при регистрации. Произведем выплаты за 24 часа на любую платежную систему.">
+    <meta name="keywords" content="maxmin, nvuti, nvuti com, nvuti регистрация, игра деньги, игра заработок, игры с выводом, игры с выводом денег, нвути, нвути сайт, онлайн игры с выводом, игры с деньгами, рубликс, драгон мани, rublix, dragon money, nvuti best, нвути бест, 1dice , nvuti.cat, nvuti.li, nvuti.bar, nvuti.best">
+
+    <meta name="author" content="nvuti.fyi">
+    <meta name="csrf-token" content="BKCVZyvfw7sTd3jY4S8TNRtqgFqxCLqEGSupihAb">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="cde3a0095776b585" />
+    <meta name="yandex-verification" content="ec9b82e55075769e" />
+
+    <meta name="google-site-verification" content="ZVWf3QjipqtqiQiFxVWA0ZPZqkkTv-AaPHLMtUhjPTU" />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+     ym(55923349, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55923349" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<style type="text/css">
+    .swal-icon--error {
+        border-color: #f27474;
+        -webkit-animation: animateErrorIcon .5s;
+        animation: animateErrorIcon .5s
+    }
+
+    .swal-icon--error__x-mark {
+        position: relative;
+        display: block;
+        -webkit-animation: animateXMark .5s;
+        animation: animateXMark .5s
+    }
+
+    .swal-icon--error__line {
+        position: absolute;
+        height: 5px;
+        width: 47px;
+        background-color: #f27474;
+        display: block;
+        top: 37px;
+        border-radius: 2px
+    }
+
+    .swal-icon--error__line--left {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        left: 17px
+    }
+
+    .swal-icon--error__line--right {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        right: 16px
+    }
+
+    @-webkit-keyframes animateErrorIcon {
+        0% {
+            -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        to {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            opacity: 1
+        }
+    }
+
+    @keyframes  animateErrorIcon {
+        0% {
+            -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        to {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes animateXMark {
+        0% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4);
+            margin-top: 26px;
+            opacity: 0
+        }
+
+        50% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4);
+            margin-top: 26px;
+            opacity: 0
+        }
+
+        80% {
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+            margin-top: -6px
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            margin-top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes  animateXMark {
+        0% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4);
+            margin-top: 26px;
+            opacity: 0
+        }
+
+        50% {
+            -webkit-transform: scale(.4);
+            transform: scale(.4);
+            margin-top: 26px;
+            opacity: 0
+        }
+
+        80% {
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+            margin-top: -6px
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            margin-top: 0;
+            opacity: 1
+        }
+    }
+
+    .swal-icon--warning {
+        border-color: #f8bb86;
+        -webkit-animation: pulseWarning .75s infinite alternate;
+        animation: pulseWarning .75s infinite alternate
+    }
+
+    .swal-icon--warning__body {
+        width: 5px;
+        height: 47px;
+        top: 10px;
+        border-radius: 2px;
+        margin-left: -2px
+    }
+
+    .swal-icon--warning__body,
+    .swal-icon--warning__dot {
+        position: absolute;
+        left: 50%;
+        background-color: #f8bb86
+    }
+
+    .swal-icon--warning__dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: -4px;
+        bottom: -11px
+    }
+
+    @-webkit-keyframes pulseWarning {
+        0% {
+            border-color: #f8d486
+        }
+
+        to {
+            border-color: #f8bb86
+        }
+    }
+
+    @keyframes  pulseWarning {
+        0% {
+            border-color: #f8d486
+        }
+
+        to {
+            border-color: #f8bb86
+        }
+    }
+
+    .swal-icon--success {
+        border-color: #a5dc86
+    }
+
+    .swal-icon--success:after,
+    .swal-icon--success:before {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 60px;
+        height: 120px;
+        background: #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+
+    .swal-icon--success:before {
+        border-radius: 120px 0 0 120px;
+        top: -7px;
+        left: -33px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 60px 60px;
+        transform-origin: 60px 60px
+    }
+
+    .swal-icon--success:after {
+        border-radius: 0 120px 120px 0;
+        top: -11px;
+        left: 30px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 60px;
+        transform-origin: 0 60px;
+        -webkit-animation: rotatePlaceholder 4.25s ease-in;
+        animation: rotatePlaceholder 4.25s ease-in
+    }
+
+    .swal-icon--success__ring {
+        width: 80px;
+        height: 80px;
+        border: 4px solid hsla(98, 55%, 69%, .2);
+        border-radius: 50%;
+        box-sizing: content-box;
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        z-index: 2
+    }
+
+    .swal-icon--success__hide-corners {
+        width: 5px;
+        height: 90px;
+        background-color: #fff;
+        padding: 1px;
+        position: absolute;
+        left: 28px;
+        top: 8px;
+        z-index: 1;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+
+    .swal-icon--success__line {
+        height: 5px;
+        background-color: #a5dc86;
+        display: block;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 2
+    }
+
+    .swal-icon--success__line--tip {
+        width: 25px;
+        left: 14px;
+        top: 46px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-animation: animateSuccessTip .75s;
+        animation: animateSuccessTip .75s
+    }
+
+    .swal-icon--success__line--long {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: animateSuccessLong .75s;
+        animation: animateSuccessLong .75s
+    }
+
+    @-webkit-keyframes rotatePlaceholder {
+        0% {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg)
+        }
+
+        to {
+            -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg)
+        }
+    }
+
+    @keyframes  rotatePlaceholder {
+        0% {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg)
+        }
+
+        to {
+            -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg)
+        }
+    }
+
+    @-webkit-keyframes animateSuccessTip {
+        0% {
+            width: 0;
+            left: 1px;
+            top: 19px
+        }
+
+        54% {
+            width: 0;
+            left: 1px;
+            top: 19px
+        }
+
+        70% {
+            width: 50px;
+            left: -8px;
+            top: 37px
+        }
+
+        84% {
+            width: 17px;
+            left: 21px;
+            top: 48px
+        }
+
+        to {
+            width: 25px;
+            left: 14px;
+            top: 45px
+        }
+    }
+
+    @keyframes  animateSuccessTip {
+        0% {
+            width: 0;
+            left: 1px;
+            top: 19px
+        }
+
+        54% {
+            width: 0;
+            left: 1px;
+            top: 19px
+        }
+
+        70% {
+            width: 50px;
+            left: -8px;
+            top: 37px
+        }
+
+        84% {
+            width: 17px;
+            left: 21px;
+            top: 48px
+        }
+
+        to {
+            width: 25px;
+            left: 14px;
+            top: 45px
+        }
+    }
+
+    @-webkit-keyframes animateSuccessLong {
+        0% {
+            width: 0;
+            right: 46px;
+            top: 54px
+        }
+
+        65% {
+            width: 0;
+            right: 46px;
+            top: 54px
+        }
+
+        84% {
+            width: 55px;
+            right: 0;
+            top: 35px
+        }
+
+        to {
+            width: 47px;
+            right: 8px;
+            top: 38px
+        }
+    }
+
+    @keyframes  animateSuccessLong {
+        0% {
+            width: 0;
+            right: 46px;
+            top: 54px
+        }
+
+        65% {
+            width: 0;
+            right: 46px;
+            top: 54px
+        }
+
+        84% {
+            width: 55px;
+            right: 0;
+            top: 35px
+        }
+
+        to {
+            width: 47px;
+            right: 8px;
+            top: 38px
+        }
+    }
+
+    .swal-icon--info {
+        border-color: #c9dae1
+    }
+
+    .swal-icon--info:before {
+        width: 5px;
+        height: 29px;
+        bottom: 17px;
+        border-radius: 2px;
+        margin-left: -2px
+    }
+
+    .swal-icon--info:after,
+    .swal-icon--info:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        background-color: #c9dae1
+    }
+
+    .swal-icon--info:after {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: -3px;
+        top: 19px
+    }
+
+    .swal-icon {
+        width: 80px;
+        height: 80px;
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 50%;
+        padding: 0;
+        position: relative;
+        box-sizing: content-box;
+        margin: 20px auto
+    }
+
+    .swal-icon:first-child {
+        margin-top: 32px
+    }
+
+    .swal-icon--custom {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0
+    }
+
+    .swal-icon img {
+        max-width: 100%;
+        max-height: 100%
+    }
+
+    .swal-title {
+        color: rgba(0, 0, 0, .65);
+        font-weight: 600;
+        text-transform: none;
+        position: relative;
+        display: block;
+        padding: 13px 16px;
+        font-size: 27px;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 0
+    }
+
+    .swal-title:first-child {
+        margin-top: 26px
+    }
+
+    .swal-title:not(:first-child) {
+        padding-bottom: 0
+    }
+
+    .swal-title:not(:last-child) {
+        margin-bottom: 13px
+    }
+
+    .swal-text {
+        font-size: 16px;
+        position: relative;
+        float: none;
+        line-height: normal;
+        vertical-align: top;
+        text-align: left;
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .64);
+        max-width: calc(100% - 20px);
+        overflow-wrap: break-word;
+        box-sizing: border-box
+    }
+
+    .swal-text:first-child {
+        margin-top: 45px
+    }
+
+    .swal-text:last-child {
+        margin-bottom: 45px
+    }
+
+    .swal-footer {
+        text-align: right;
+        padding-top: 13px;
+        margin-top: 13px;
+        padding: 13px 16px;
+        border-radius: inherit;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0
+    }
+
+    .swal-button-container {
+        margin: 5px;
+        display: inline-block;
+        position: relative
+    }
+
+    .swal-button {
+        background-color: #7cd1f9;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 24px;
+        margin: 0;
+        cursor: pointer
+    }
+
+    .swal-button:not([disabled]):hover {
+        background-color: #78cbf2
+    }
+
+    .swal-button:active {
+        background-color: #70bce0
+    }
+
+    .swal-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+    }
+
+    .swal-button[disabled] {
+        opacity: .5;
+        cursor: default
+    }
+
+    .swal-button::-moz-focus-inner {
+        border: 0
+    }
+
+    .swal-button--cancel {
+        color: #555;
+        background-color: #efefef
+    }
+
+    .swal-button--cancel:not([disabled]):hover {
+        background-color: #e8e8e8
+    }
+
+    .swal-button--cancel:active {
+        background-color: #d7d7d7
+    }
+
+    .swal-button--cancel:focus {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+    }
+
+    .swal-button--danger {
+        background-color: #e64942
+    }
+
+    .swal-button--danger:not([disabled]):hover {
+        background-color: #df4740
+    }
+
+    .swal-button--danger:active {
+        background-color: #cf423b
+    }
+
+    .swal-button--danger:focus {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+    }
+
+    .swal-content {
+        padding: 0 20px;
+        margin-top: 20px;
+        font-size: medium
+    }
+
+    .swal-content:last-child {
+        margin-bottom: 20px
+    }
+
+    .swal-content__input,
+    .swal-content__textarea {
+        -webkit-appearance: none;
+        background-color: #fff;
+        border: none;
+        font-size: 14px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, .14);
+        padding: 10px 13px;
+        border-radius: 2px;
+        transition: border-color .2s
+    }
+
+    .swal-content__input:focus,
+    .swal-content__textarea:focus {
+        outline: none;
+        border-color: #6db8ff
+    }
+
+    .swal-content__textarea {
+        resize: vertical
+    }
+
+    .swal-button--loading {
+        color: transparent
+    }
+
+    .swal-button--loading~.swal-button__loader {
+        opacity: 1
+    }
+
+    .swal-button__loader {
+        position: absolute;
+        height: auto;
+        width: 43px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        pointer-events: none;
+        opacity: 0
+    }
+
+    .swal-button__loader div {
+        display: inline-block;
+        float: none;
+        vertical-align: baseline;
+        width: 9px;
+        height: 9px;
+        padding: 0;
+        border: none;
+        margin: 2px;
+        opacity: .4;
+        border-radius: 7px;
+        background-color: hsla(0, 0%, 100%, .9);
+        transition: background .2s;
+        -webkit-animation: swal-loading-anim 1s infinite;
+        animation: swal-loading-anim 1s infinite
+    }
+
+    .swal-button__loader div:nth-child(3n+2) {
+        -webkit-animation-delay: .15s;
+        animation-delay: .15s
+    }
+
+    .swal-button__loader div:nth-child(3n+3) {
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s
+    }
+
+    @-webkit-keyframes swal-loading-anim {
+        0% {
+            opacity: .4
+        }
+
+        20% {
+            opacity: .4
+        }
+
+        50% {
+            opacity: 1
+        }
+
+        to {
+            opacity: .4
+        }
+    }
+
+    @keyframes  swal-loading-anim {
+        0% {
+            opacity: .4
+        }
+
+        20% {
+            opacity: .4
+        }
+
+        50% {
+            opacity: 1
+        }
+
+        to {
+            opacity: .4
+        }
+    }
+
+    .swal-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 0;
+        overflow-y: auto;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 10000;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .3s
+    }
+
+    .swal-overlay:before {
+        content: " ";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%
+    }
+
+    .swal-overlay--show-modal {
+        opacity: 1;
+        pointer-events: auto
+    }
+
+    .swal-overlay--show-modal .swal-modal {
+        opacity: 1;
+        pointer-events: auto;
+        box-sizing: border-box;
+        -webkit-animation: showSweetAlert .3s;
+        animation: showSweetAlert .3s;
+        will-change: transform
+    }
+
+    .swal-modal {
+        width: 478px;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        position: static;
+        margin: 20px auto;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        z-index: 10001;
+        transition: opacity .2s, -webkit-transform .3s;
+        transition: transform .3s, opacity .2s;
+        transition: transform .3s, opacity .2s, -webkit-transform .3s
+    }
+
+    @media (max-width:500px) {
+        .swal-modal {
+            width: calc(100% - 20px)
+        }
+    }
+
+    @-webkit-keyframes showSweetAlert {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+        1% {
+            -webkit-transform: scale(.5);
+            transform: scale(.5)
+        }
+
+        45% {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05)
+        }
+
+        80% {
+            -webkit-transform: scale(.95);
+            transform: scale(.95)
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    @keyframes  showSweetAlert {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+        1% {
+            -webkit-transform: scale(.5);
+            transform: scale(.5)
+        }
+
+        45% {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05)
+        }
+
+        80% {
+            -webkit-transform: scale(.95);
+            transform: scale(.95)
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="/css/vendor.bundle.css">
+<link rel="stylesheet" href="/css/loader-0.css">
+<link rel="stylesheet" href="/css/style.css?v=1586067029" id="layoutstyle">
+<link rel="stylesheet" href="/css/datatables.min.css">
+<script src="/js/jquery-latest.min.js"></script>
+<script src="/js/odometr.js"></script>
+<script src="/js/js.cookie.js"></script>
+</head>
+
+<body class="page-user no-touch">
+   <script>!function(e,t,d,s,a,n,c){e[a]={},e[a].date=(new Date).getTime(),n=t.createElement(d),c=t.getElementsByTagName(d)[0],n.type="text/javascript",n.async=!0,n.src=s,c.parentNode.insertBefore(n,c)}(window,document,"script","https://nwutivip.push.world/https.embed.js","pw"),pw.websiteId="97578e64c8755ba079b9b266d5074fd2d8d742c317793db985f4141df791568c";</script>
+   <div class="topbar-wrap" style="padding-top: 0px;">
+    <div class="topbar is-sticky">
+        <div class="container">
+            <div>
+                <style>
+                    .mmmob {
+                        display: none;
+                    }
+                    @media (max-width: 991px) {
+                        .des {
+                            display: none;
+                        }
+                        .mmmob {
+                            display: block;
+                        }
+                        .desktop-nav {
+                            margin-top: -55px;
+                        }
+                    }
+                </style>
+                <ul class="topbar-nav d-lg-none">
+                    <li class="topbar-nav-item relative" id="close-nav"><a class="toggle-nav" href="https://demo.themenio.com/tokenwiz/buy-token.html#">
+                        <div class="toggle-icon"><span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span></div>
+                    </a></li>
+                </ul>
+                <center class="desktop-nav" style="font-weight: 600;padding: 5px;color: #fff;font-size: 25px;">NVUTI</center>
+            </div>
+        </div><!-- .container -->
+    </div><!-- .topbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-innr">
+                <ul class="navbar-menu des">
+                    <li ><a href="/">Главная</a></li>
+                    <li ><a href="/check">Честная игра</a></li>
+                    <li ><a href="/faq">FAQ</a></li>
+                    <li ><a href="/support">Контакты</a></li>
+                    <li ><a href="/withdraws">Выплаты</a></li>
+                </ul>
+                <ul class="navbar-menu mmmob">
+                    <li ><a href="/">Главная</a></li>
+                    <li ><a href="/check">Честная игра</a></li>
+                    <li ><a href="/faq">FAQ</a></li>
+                    <li ><a href="/support">Контакты</a></li>
+                    <li ><a href="/withdraws">Выплаты</a></li>
+                </ul>
+                <ul class="navbar-btns">
+                                        <li><a href="https://vk.com/nvuti_wtf" target="_blank" class="btn btn-sm btn-outline btn-light"><em style="color: #3b5998;" class="fab fa-vk"></em><span>Вконтакте</span></a></li>
+                </ul>
+            </div><!-- .navbar-innr -->
+        </div><!-- .container -->
+    </div><!-- .navbar -->
+</div><!-- .topbar-wrap -->
+<div class="page-content">
+  <div class="container">
+   <div class="row">
+	<div class="aside sidebar-right col-lg-3 ">
+				<div class="content-area card">
+			<div class="card-innr">
+				<div id="enterBlock">
+					<div class="card-head has-aside">
+						<h4 class="card-title">Авторизация</h4>
+					</div>
+					<div style="margin-top:8px">
+						<ul class="row guttar-20px guttar-vr-20px">
+							<!-- <script src="//ulogin.ru/js/ulogin.js"></script> -->
+							<li class="col" id="uLogin"
+								data-ulogin="display=buttons;theme=classic;fields=first_name,last_name,photo;providers=vkontakte;hidden=;redirect_uri=https%3A%2F%2F1nvuti.best%2F;mobilebuttons=0;">
+								<a data-uloginbutton="vkontakte"
+									class="btn btn-outline btn-dark btn-facebook btn-block"
+									href="/login"><em
+										class="fab fa-vk"></em><span>Вконтакте</span></a>
+							</li>
+						</ul>
+						<div class="sap-text"><span>Или</span></div>
+
+						<div class="input-item"><input type="text" id="email_l" placeholder="Логин"
+								class="input-bordered"></div>
+						<div class="input-item"><input id="password_l" type="password" placeholder="Пароль"
+								class="input-bordered"></div>
+
+						<!-- <div class="g-recaptcha" data-sitekey="6LexyXkUAAAAAM0zlTWDm7VPDjXFsndjzvfT-lwN"></div> -->
+
+						<a id="enter_but" class="btn btn-primary btn-block"
+							style="box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3); color:white"
+							onclick="login()">Войти</a>
+						<a id="loadEnter" class="btn btn-primary btn-block disabled"
+							style="box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3); display:none">
+							<div class="loader"></div>
+						</a>
+						<div class="btn btn-danger btn-block" id="error_enter"
+							style="margin-top:15px;display:none;pointer-events:none"></div>
+
+
+
+						<div class="gaps-2x"></div>
+						<div class="gaps-2x"></div>
+						<div onclick="$('#enterBlock').hide();$('#registerBlock').fadeIn(1200);"
+							class="form-note text-center"><strong
+								style="color:#2c80ff;cursor:pointer">Регистрация</strong></div>
+
+
+					</div>
+				</div>
+
+				<div id="registerBlock" style="display:none">
+					<div class="card-head has-aside">
+						<h4 class="card-title">Регистрация</h4>
+					</div>
+					<div style="margin-top:8px">
+						<div class="input-item"><input type="text" id="login_r" placeholder="Логин"
+								class="input-bordered"></div>
+						<div class="input-item"><input id="email_r" type="text" placeholder="Email"
+								class="input-bordered"></div>
+						<div class="input-item"><input id="password_r" type="password" placeholder="Пароль"
+								class="input-bordered"></div>
+						<div class="input-item"><input id="password2_r" type="password"
+								placeholder="Повторите пароль" class="input-bordered"></div>
+						<!-- <div style="transform: scale(0.65);margin-left: -42px;margin-top: -17px;" class="g-recaptcha" data-sitekey="6LeelqAUAAAAANC5GR_WWHaMeDH45EPA6gTZ1WAk"></div> -->
+						Регистрируясь вы соглашаетесь с правилами проекта
+						<div id="butRegister" class="btn btn-primary btn-block"
+							style="box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3);"
+							onclick="register1()">
+							Зарегистрироваться</div>
+						<div class="btn btn-danger btn-block" id="error_register"
+							style="margin-top:15px;display:none;pointer-events:none"></div>
+
+
+						<div class="gaps-2x"></div>
+						<div class="gaps-2x">
+
+						</div>
+						<div onclick="$('#registerBlock').hide();$('#enterBlock').fadeIn(1200);"
+							class="form-note text-center">Есть аккаунт? <strong
+								style="color:#2c80ff;cursor:pointer">Войти</strong></div>
+
+
+					</div>
+				</div>
+
+
+				<script>
+					function login() {
+						if ($('#email_l').val().length < 4) {
+							$('#error_enter').css('display', 'block');
+							return $('#error_enter').html('Логин от 4 символов');
+						}
+						if ($('#password_l').val() == '') {
+							$('#error_enter').css('display', 'block');
+							return $('#error_enter').html('Введите пароль');
+						}
+						$.ajax({
+							type: 'POST',
+							url: '/action',
+							beforeSend: function () {
+								$('#butEnter').html(
+									'<div class="loader" style="height:23px;width:23px"></div>'
+									);
+								$('#butEnter').addClass('disabled');
+								$('#error_enter').hide();
+							},
+							data: {
+								type: "login",
+								login: $('#email_l').val(),
+								pass: $('#password_l').val()
+							},
+							success: function (data) {
+								$('#butEnter').html('Войти');
+								$('#butEnter').removeClass('disabled');
+
+
+								var obj = jQuery.parseJSON(data);
+								if ('success' in obj) {
+									Cookies.set('sid', obj.success.sid, {
+										expires: 365,
+										path: '/',
+										secure: true
+									});
+									Cookies.set('login', $('#email_l').val(), {
+										expires: 365,
+										path: '/',
+										secure: true
+									});
+									window.location.href = '';
+								} else {
+									$('#error_enter').html(obj.error);
+									$('#error_enter').css('display', 'block');
+								}
+
+
+							}
+						});
+					}
+					$('#login_r').keydown(function(event) {
+						if (event.which === 13) {
+							register1();
+
+						}
+					});
+					$('#email_r').keydown(function(event) {
+						if (event.which === 13) {
+							register1();
+
+						}
+					});
+					$('#password_r').keydown(function(event) {
+						if (event.which === 13) {
+							register1();
+
+						}
+					});
+					var input = document.getElementById('login_r'),
+						value = input.value;
+
+					input.addEventListener('input', onInput);
+
+					function onInput(e) {
+						var newValue = e.target.value;
+						if (newValue.match(/[^a-zA-Z0-9]/g)) {
+							input.value = value;
+							return;
+						}
+						value = newValue;
+					}
+
+					var input2 = document.getElementById('email_r'),
+						value = input2.value;
+
+					input2.addEventListener('input', onInput1);
+
+					function onInput1(e) {
+						var newValue = e.target.value;
+						if (newValue.match(/[^a-zA-Z0-9@.-_-]/g)) {
+							input2.value = value;
+							return;
+						}
+						value = newValue;
+					}
+
+					function isValidEmailAddress(email) {
+						var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,5})(\]?)$/;
+						return expr.test(email);
+					};
+
+					function register1() {
+						if ($('#login_r').val().length < 4) {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Логин от 4 до 15 символов');
+						}
+						if ($('#email_r').val() == '') {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Введите email');
+						}
+						if (!isValidEmailAddress($('#email_r').val())) {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Введите корректный email');
+						}
+						if ($('#password_r').val() == '') {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Введите пароль');
+						}
+						if ($('#password_r').val().length < 5) {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Пароль от 5 символов');
+						}
+							if ($('#userPassRegisterRepeat').val() == '') {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Повторите пароль');
+						}
+						if ($('#password2_r').val() != $('#password_r').val()) {
+							$('#error_register').css('display', 'block');
+							return $('#error_register').html('Пароли не совпадают');
+						}
+						$.ajax({
+							type: 'POST',
+							url: '/action',
+							beforeSend: function() {
+								$('#error_register').css('display', 'none');
+								$('#loader_register').css('position', '');
+								$('#enter_but').css('pointer-events', 'none');
+								$('#dot-container_register').css('display', '');
+								$('#text_register').css('display', 'none');
+
+							},
+							data: {
+								type: "register",
+								login: $('#login_r').val(),
+								pass: $('#password_r').val(),
+								email: $('#email_r').val(),
+								ref: Cookies.get('ref')
+							},
+							success: function(data) {
+								$('#enter_but').css('pointer-events', '');
+								var obj = jQuery.parseJSON(data);
+								if ('success' in obj) {
+									document.location.href = '';
+									return false;
+								} else {
+									$('#error_register').html(obj.error);
+									$('#error_register').css('display', 'block');
+									$('#text_register').css('display', 'block');
+									$('#loader_register').css('position', 'absolute');
+									$('#dot-container_register').css('display', 'none');
+								}
+							}
+						});
+					}
+				</script>
+			</div>
+		</div>
+		
+	</div>
+	<style>
+		.mobile {
+			display: none;
+		}
+
+		. desProfit {
+			display: block;
+		}
+
+		.mobileProfit {
+			display: none;
+		}
+
+		.heded {
+			height: 210px
+		}
+
+		@media (max-width: 576px) {
+			.mobile {
+				display: flex;
+			}
+
+			.heded {
+				height: 120px
+			}
+
+			.mrnr {
+				display: flex
+			}
+
+			.hbetf {
+				display: none
+			}
+
+			.mobileProfit {
+				padding-top: 20px;
+				display: block;
+			}
+
+			.desProfit {
+				display: none;
+			}
+
+			.kjfwf {
+				display: none;
+			}
+		}
+
+		.mfjkg {
+			color: #007dff !important;
+			cursor: default;
+		}
+	</style>
+	
+	<div class="main-content col-lg-9" id="game">
+
+<!--temp bns-->
+		<div style="background-color: #1c65c9;">
+			<a style="padding: 10px; display: block; text-align: center; vertical-align: middle; color: #fff"  href="#" data-toggle="modal" data-target="#modalDeposit" onclick="getNowDeposits()"> 
+				<b>Бонусы для новичков! Нажми, чтобы забрать подарок</b> 
+			</a>			
+		</div>
+
+		<div class="gaps-3x">
+						
+		</div>
+
+		<div class="content-area card">
+			<div class="card-innr">
+				<div class="card-head has-aside">
+					<h4 class="card-title">Режим игры</h4>
+				</div>
+				<style>
+					.avatar_in_roll {
+						width: 60px;
+						height: 60px;
+						margin: 15px 1px;
+						background-color: #2b3035;
+						border-radius: 3px;
+						background-size: 100% 100%;
+					}
+				</style>
+				<ul class="nav nav-tabs nav-tabs-line" role="tablist">
+					<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#dice-game">Main game</a></li>
+				</ul>
+				<div class="tab-content" id="profile-details">
+					<div class="tab-pane fade active show" id="dice-game">
+						<div style="margin-top:30px">
+							<div class="row no-gutters height-100">
+								<div class="col-md-6 ">
+									<div class="row">
+										<div class="col-12 mobileProfit">
+											<ul class="token-info-list text-center"
+												style="padding-bottom:0px">
+												<li class="" style="font-size:64px;margin-top:-47px"
+													id="BetProfitMob"></li>
+												<span class="card-sub-title card-tyy">Возможный
+													выигрыш</span>
+											</ul>
+										</div>
+										<div class="col-6">
+											<div class="input-item input-with-label">
+												<label for="full-name"
+													class="input-item-label text-center">Сумма</label>
+												<input id="BetSize" onkeyup="validateBetSizeD(this)"
+													class="input-bordered text-center" value="1">
+											</div><!-- .input-item -->
+											<div class="d-sm-flex justify-content-center"
+												style="width:100%;margin:0">
+												<span class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;"
+													onclick="var x = ($('#BetSize').val()*2);$('#BetSize').val(parseFloat(x.toFixed(2)));updateProfit()">Удвоить</span>
+												<span
+													onclick="$('#BetSize').val(Math.max(($('#BetSize').val()/2).toFixed(2), 1));updateProfit()"
+													class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;margin-left:5px">Половина</span>
+											</div>
+											<style>
+												.tll {
+													margin-left: -15px;
+													margin-top: 6px
+												}
+
+												@media (max-width: 576px) {
+													.tll {
+														margin-left: 19px;
+														margin-top: 6px
+													}
+												}
+											</style>
+											<div class="d-sm-flex justify-content-center tll" style="">
+												<span
+													onclick="var max = $('#userBalance').attr('myBalance');$('#BetSize').val(Math.max(max,1));updateProfit()"
+													class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;">Макс</span>
+												<span onclick="$('#BetSize').val(1);updateProfit()"
+													class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;margin-left:5px">Мин</span>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="input-item input-with-label"><label for="full-name"
+													class="input-item-label text-center">Процент</label><input
+													class="input-bordered text-center" type="text"
+													name="full-name" value="50" id="BetPercent"
+													onkeyup="validateBetPercentD(this)"></div>
+											<!-- .input-item -->
+											<div class="d-sm-flex justify-content-center"
+												style="width:100%;margin:0">
+												<span class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;"
+													onclick="$('#BetPercent').val(Math.min(($('#BetPercent').val()*2).toFixed(2), 85));updateProfit()">Удвоить</span>
+												<span class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;margin-left:5px"
+													onclick="$('#BetPercent').val(Math.max(($('#BetPercent').val()/2).toFixed(2).replace(/.00/g, ''), 1));updateProfit()">Половина</span>
+											</div>
+											<div class="d-sm-flex justify-content-center tll">
+												<span class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;"
+													onclick="$('#BetPercent').val(85);updateProfit()">Макс</span>
+												<span class="badge badge-dim badge-md badge-light"
+													style="min-width:0px!important; padding: 4px 6px;margin-left:5px"
+													onclick="$('#BetPercent').val(1);updateProfit()">Мин</span>
+											</div>
+										</div>
+
+										<div class="col-12 text-center hbetf" style="margin-top:30px ">
+											<center style="font-size:12px">Hash игры:</center>
+											<span id="hashBet" hid="">
+												<!--Создаем игру-->
+																							</span>
+										</div>
+									</div>
+									<script>
+										function validateBetPercentD(inp) {
+											if (inp.value > 85) {
+												inp.value = 85;
+											}
+											inp.value = inp.value.replace(/[,]/g, '.')
+												.replace(/[^\d,.]*/g, '')
+												.replace(/([,.])[,.]+/g, '$1')
+												.replace(/^[^\d]*(\d+([.,]\d{0,2})?).*$/g, '$1');
+										}
+										function updateProfit() {
+											$('#BetProfit').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+											$('#BetProfitMob').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+											$('#MinRange').html(Math.floor(($('#BetPercent').val() / 100) * 999999));
+											$('#MaxRange').html(999999 - Math.floor(($('#BetPercent').val() / 100) * 999999));
+										}
+										function validateBetSizeD(inp) {
+											inp.value = inp.value.replace(/[,]/g, '.')
+												.replace(/[^\d,.]*/g, '')
+												.replace(/([,.])[,.]+/g, '$1')
+												.replace(/^[^\d]*(\d+([.,]\d{0,2})?).*$/g, '$1');
+										}
+										function bet(type) {
+
+											if ($('#userBalance').html() < $('#BetSize').val()) {
+												$('#error_bet').html('Недостаточно средств');
+												return $('#error_bet').css('display', '');
+											}
+											if ($('#BetPercent').val() > 85 || $('#BetPercent').val() < 1) {
+												$('#error_bet').html('% Шанс от 1 до 85');
+												return $('#error_bet').css('display', '');
+											}
+											if ($('#BetSize').val() > 1000000000000000000000000000 || $('#BetSize').val() < 1) {
+												$('#error_bet').html('Ставки от 1 рубля!');
+												return $('#error_bet').css('display', '');
+											}
+											$.ajax({
+												type: 'POST',
+												url: '/action',
+												beforeSend: function() {
+													$('#checkBet').css('display', 'none');
+													$('#error_bet').css('display', 'none')
+													$('#succes_bet').css('display', 'none')
+													$('#betLoad').css('display', '');
+													$('#buttonMax').css('pointer-events', 'none');
+													$('#buttonMin').css('pointer-events', 'none');
+												},
+												data: {
+													type: type,
+													hash: $.trim($('#hashBet').html()),
+													betSize: $('#BetSize').val(),
+													betPercent: $('#BetPercent').val(),
+												},
+												success: function(data) {
+													$('#buttonMax').css('pointer-events', '');
+													$('#buttonMin').css('pointer-events', '');
+													$('#betLoad').css('display', 'none');
+													var obj = jQuery.parseJSON(data);
+													if ('success' in obj) {
+														$('#checkBet').css('display', '');
+														$('#checkBet').attr('href', 'game/?id=' + obj.success.check_bet);
+														//socket.emit('newDrop', obj.success.check_bet);
+														if (obj.success.type == 'win') {
+															$('#succes_bet').css('display', '');
+															$("#succes_bet").html("Выиграли <b>" + obj.success.profit + " </b> ");
+														}
+														if (obj.success.type == 'lose') {
+															$('#error_bet').css('display', '');
+															$("#error_bet").html("Выпало " + obj.success.number);
+														}
+														$("#hashBet").html(obj.success.hash);
+														sss();
+														$('#userBalance').attr('myBalance', obj.success.new_balance);
+														updateBalance(obj.success.balance, obj.success.new_balance);
+													}
+													if ('error' in obj) {
+														$('#error_bet').html(obj.error.text);
+														return $('#error_bet').css('display', '');
+													}
+													if ('new' in obj) {
+														$("#hashBet").html(obj.new.hash);
+														sss();
+														$('#error_bet').html(obj.new.text);
+														$('#error_bet').css('display', '');
+
+													}
+													if ('ban' in obj) {
+														$('#error_bet').html(obj.ban.text);
+														$('#error_bet').css('display', '');
+														setTimeout(function() {
+															location.href = '/logout';
+														},1500);
+
+													}
+
+												}
+											});
+
+										}
+									</script>
+
+								</div>
+								<div class="col-md-1 "></div>
+								<div class="col-md-5 height-100">
+									<div class="token-info  ">
+										<div class="heded">
+											<ul class="token-info-list text-center desProfit">
+												<li class="" style="font-size:64px;margin-top:-47px"
+													id="BetProfit">2.00</li>
+												<span class="card-sub-title card-tyy">Возможный
+													выигрыш</span>
+											</ul>
+											<div class="row" style="margin-top:-7px">
+												<div class="col-6">
+													<span class="card-sub-title card-tyy1 text-center">0 -
+														<span id="MinRange">499999</span></span>
+													<div id="buttonMin" class="input-item input-with-label">
+														<a onclick="bet('betMin')"
+															style="color:#fff"
+															class="btn btn-light btn-block">Меньше</a></div>
+													<!-- .input-item -->
+												</div>
+												<div class="col-6">
+													<span class="card-sub-title card-tyy1 text-center"><span
+															id="MaxRange">500000</span> - 999999</span>
+													<div id="buttonMax"
+														class="input-item input-with-label btn-block"><a
+															style="color:#fff"
+															onclick="bet('betMax')"
+															class="btn btn-light btn-block">Больше</a></div>
+													<!-- .input-item -->
+												</div>
+												<div class="col-12" style="margin-top:-20px">
+													<div style="background: #000; padding:0px 20px!important"
+														class="btn  btn-block"></div>
+
+												</div>
+
+												<div class="col-12">
+													<center>
+														<div id="betLoad" class='cssload-loader'
+															style="background: none;display:none">
+															<div class='cssload-inner cssload-one'></div>
+															<div class='cssload-inner cssload-two'></div>
+															<div class='cssload-inner cssload-three'></div>
+														</div>
+													</center>
+													<div id="succes_bet"
+														style="background: linear-gradient(to right, #0ACB90, #2BDE6D);display:none;pointer-events:none;box-shadow: 0 5px 23px 0 rgba(0, 215, 126, 0.27);"
+														class="btn btn-success btn-block"></div>
+
+
+												</div>
+												<div class="col-12">
+													<div id="error_bet"
+														style="display:none;pointer-events:none; box-shadow: 0 5px 23px 0 rgba(255, 105, 114, 0.14);"
+														class="btn  btn-block bg-danger"></div>
+												</div>
+
+
+											</div>
+											<center id="checkBet" data-toggle="modal"
+												data-target="#checkDiceModal"
+												style="text-align: center; margin-top:5px;display:none;-webkit-user-select: none;-moz-user-select: none; cursor:pointer"
+												href="">Проверить игру</center>
+											<div class="modal fade" id="checkDiceModal" tabindex="-1">
+												<div
+													class="modal-dialog modal-dialog-md modal-dialog-centered">
+													<div class="modal-content"><a style="cursor:pointer"
+															class="modal-close" data-dismiss="modal"
+															aria-label="Close"><em
+																class="ti ti-close"></em></a>
+														<div class="popup-body" id="modalDice">
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+											<script>
+												function updateProfit() {
+													$('#BetProfit').html(((100 / $('#BetPercent').val()) *$('#BetSize').val()).toFixed(2));
+													$('#BetProfitMob').html(((100 / $('#BetPercent').val()) *$('#BetSize').val()).toFixed(2));
+													$('#BetProfitD').html(((100 / $('#BetPercent').val()) *
+														$('#BetSize').val()).toFixed(2));
+													$('#MinRange').html(Math.floor(($('#BetPercent').val() /
+														100) * 999999));
+													$('#MaxRange').html(999999 - Math.floor(($(
+														'#BetPercent').val() / 100) * 999999));
+												}
+
+												function sss() {
+													$('#hashBet').fadeOut('slow', function () {
+														$('#hashBet').fadeIn('slow', function () {
+
+														});
+													});
+												}
+												$('#BetPercent').keyup(function () {
+													$('#BetProfit').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+													$('#BetProfitMob').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+													$('#MinRange').html(Math.floor(($('#BetPercent').val() / 100) * 999999));
+													$('#MaxRange').html(999999 - Math.floor(($('#BetPercent').val() / 100) *999999));
+												});
+												$('#BetSize').keyup(function () {
+													$('#MinRange').html(Math.floor(($('#BetPercent').val() / 100) * 999999));
+													$('#MaxRange').html(999999 - Math.floor(($('#BetPercent').val() / 100) *999999));
+													$('#BetProfit').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+													$('#BetProfitMob').html(((100 / $('#BetPercent').val()) * $('#BetSize').val()).toFixed(2));
+												});
+
+												function updateBalance(start, end) {
+
+													var el = document.getElementById('userBalance');
+
+													od = new Odometer({
+														el: el,
+														value: start
+													});
+
+													od.update(end);
+
+													var elMob = document.getElementById('userBalanceMob');
+
+													odelMob = new Odometer({
+														el: elMob,
+														value: start
+													});
+
+													odelMob.update(end);
+												}
+											</script>
+											<script type="text/javascript">
+												window.onload = function () {
+
+													setInterval(load_20_games, 4000);
+
+												}
+											</script>
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-head" style="margin-top:80px">
+							<h4 class="card-title">Последние игры</h4>
+						</div>
+						<table class="table tnx-table table-responsive text-center" style="margin-top:20px">
+							<thead>
+								<tr>
+									<th style="width:14%">Логин</th>
+									<th style="width:15%">Число</th>
+									<th style="width:15%">Цель</th>
+									<th style="width:15%">Сумма</th>
+									<th style="width:15%">Шанс</th>
+									<th style="width:15%">Выигрыш</th>
+
+								</tr><!-- tr -->
+							</thead>
+							<tbody id="response" class="story_app">
+								<tr>
+									<td>Login</td>
+									<td class="text-success" style="font-weight:600">234234</td>
+									<td>499999 - 999999</td>
+									<td>242434</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 95%" aria-valuenow="25" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</td>
+									<td class="text-success" style="font-weight:600">20.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- .tab-pane -->
+				</div>
+			</div> <!-- .card-innr -->
+		</div> <!-- .content-area -->
+	</div><!-- .col -->
+	<div class="main-content col-lg-9" id="profile" style="display:none">
+		<div class="content-area card">
+			<div class="card-innr">
+				<div class="card-head">
+					<h4 class="card-title">Ваш профиль</h4>
+				</div>
+				<ul class="nav nav-tabs nav-tabs-line" role="tablist">
+					<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+							href="#personal-data">Изменить пароль</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab"
+							href="#settings">Социальные сети</a></li>
+				</ul><!-- .nav-tabs-line -->
+				<div class="tab-content" id="profile-details">
+					<div class="tab-pane fade show active" id="personal-data">
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="input-item input-with-label"><label for="full-name"
+										class="input-item-label">Новый пароль</label><input id="resetPass"
+										class="input-bordered" type="password"></div><!-- .input-item -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="input-item input-with-label"><label for="full-name"
+										class="input-item-label">Повторите пароль</label><input
+										id="resetPassRepeat" class="input-bordered" type="password"></div>
+								<!-- .input-item -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a id="error_resetPass" class="btn  btn-block btnError bg-danger "
+									style="display:none; color:#fff;margin-bottom:15px; margin: 0 auto"></a>
+								<a id="succes_resetPass" class="btn  btn-block btnSuccess"
+									style="display:none; color:#fff; cursor:default;  margin-bottom:10px;    background: linear-gradient(to right, rgb(10, 203, 144), rgb(43, 222, 109));">Пароль
+									изменен</a>
+							</div>
+						</div>
+						<div class="gaps-1x"></div><!-- 10px gap -->
+						<div class="d-sm-flex justify-content-between align-items-center"><button
+								class="btn btn-primary"
+								style=" box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3);"
+								onclick="resetPass()">Изменить</button>
+							<script>
+								function resetPass() {
+									if ($('#resetPass').val() == '') {
+										$('#error_resetPass').show();
+										return $('#error_resetPass').html('Введите пароль');
+									}
+									if ($('#resetPass').val().length < 5) {
+										$('#error_resetPass').show();
+										return $('#error_resetPass').html('Пароль от 5 символов');
+									}
+									if ($('#resetPass').val() != $('#resetPassRepeat').val()) {
+										$('#error_resetPass').show();
+										return $('#error_resetPass').html('Пароли не совпадают');
+									}
+									$.ajax({
+										type: 'POST',
+										url: '/action',
+										beforeSend: function () {
+											$('#error_resetPass').hide();
+											$('#succes_resetPass').hide();
+										},
+										data: {
+											type: "resetPassPanel",
+											newPass: $('#resetPass').val()
+										},
+										success: function (data) {
+											var obj = jQuery.parseJSON(data);
+											if ('success' in obj) {
+												$("#succes_resetPass").show();
+												Cookies.set('sid', obj.success.sid, {
+													path: '/',
+													secure: true
+												});
+												return false;
+											} else {
+												$('#error_resetPass').show();
+												return $('#error_resetPass').html(obj.error.text);
+											}
+										}
+									});
+
+								}
+							</script>
+							<div class="gaps-2x d-sm-none"></div>
+						</div>
+					</div><!-- .tab-pane -->
+					<div class="tab-pane fade" id="settings">
+						<a class="btn btn-outline btn-dark btn-facebook " style="margin-top:10px"><em
+								class="fab fa-vk"></em><span>Привязать аккаунт</span></a>
+					</div><!-- .tab-pane -->
+				</div><!-- .tab-content -->
+			</div><!-- .card-innr -->
+		</div>
+	</div>
+	<div class="main-content col-lg-9" id="bonus" style="display:none">
+		<div class="card-innr card">
+			
+
+			<div class="row">
+					<div class="offset-md-3 col-md-6 my-2">
+						<span
+					class="status-text text-dark" style="text-align: center;">Активация промокодов.</span>
+						<input class="input-bordered col-6" type="text" id="promo_active_input" placeholder="Promocode" style="width: auto; max-width: 100%;">
+						<a class="btn btn-primary"
+							style=" box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3); color:#fff; float: right;"
+							id="butPromo"
+							href="#" onclick="promo_active()">Активировать</a>
+							
+						</div><!-- .col -->
+
+					</div>
+					<p class="text-light text-center my-2"> Мы каждый день публикуем промокоды на нашем 
+						<a href="http://bit.ly/nvpromo2" target="_blank">
+							YouTube канале. (только для подписчиков)
+						</a>
+						<br>
+						Обязательно подпишись! Каждый день публикуем новый промокод!
+					</p>
+
+
+				</div>
+
+
+		<script>
+			function getPromo() {
+				$.ajax({
+					type: 'POST',
+					url: '/action',
+					beforeSend: function () {
+						$('#butPromo').html('<div class="loader"></div>').addClass("disabled");
+					},
+					data: {
+						type: "getBonus",
+						vk: ""
+					},
+					success: function (data) {
+						$('#butPromo').html('Получить').removeClass("disabled");
+						$('#error_promo').hide();
+						var obj = jQuery.parseJSON(data);
+						if ('success' in obj) {
+							$("#succes_promo").show();
+							$('#succes_promo').html(obj.success.text);
+							$('#promoBalance').html(obj.success.promo_balance);
+							updateBalance(obj.success.balance, obj.success.new_balance);
+							return false;
+						} else {
+							$('#error_promo').show();
+							$("#succes_promo").hide();
+							return $('#error_promo').html(obj.error.text);
+						}
+					}
+				});
+
+			}
+			function promo_active() {
+				$.ajax({
+					type: 'POST',
+					url: '/action',
+					beforeSend: function () {
+						
+					},
+					data: {
+						type: "PromoActive",
+						promo: $('#promo_active_input').val()
+					},
+					success: function (data) {
+
+
+
+
+
+						toastr.clear()
+				        toastr.options = {
+				            closeButton: !0,
+				            debug: !1,
+				            newestOnTop: !1,
+				            progressBar: !1,
+				            positionClass: "toast-top-right",
+				            preventDuplicates: !0,
+				            showDuration: "1000",
+				            hideDuration: "10000",
+				            timeOut: "2000",
+				            extendedTimeOut: "1000"
+				        }
+				        var obj = jQuery.parseJSON(data);
+						if ('success' in obj) {
+							updateBalance(obj.success.balance, obj.success.new_balance);
+							toastr.success('<em class="ti ti-check toast-message-icon"></em> Промокод успешно активирован!')
+				        	$('#promo_active_input').val('')
+				        }else{
+				        	toastr.error('<em class="ti ti-na toast-message-icon"></em> '+obj.error.text)
+				        }
+				        
+				  
+
+					}
+				});
+
+			}
+		</script>
+	</div>
+	<div class="main-content col-lg-9" id="ref22" style="display:none">
+		<div class="content-area card">
+			<div class="card-innr">
+				<div class="card-head">
+					<h5 class="card-title card-title-md">Приглашайте друзей и зарабатывайте</h5>
+				</div>
+				<div class="card-text">
+					<p>Получайте <strong>5% сразу на баланс</strong> с каждого пополнения реферала.</p>
+				</div>
+				<div class="referral-form">
+					<div class="d-flex justify-content-between align-items-center">
+						<h5 class="mb-0 font-bold">Ваша ссылка</h5>
+					</div>
+					<div class="copy-wrap mgb-1-5x mgt-1-5x"><span class="copy-feedback"></span><em
+							class="fas fa-link"></em><input type="text" class="copy-address" value=""
+							disabled=""><button class="copy-trigger copy-clipboard"
+							data-clipboard-text=""><em class="ti ti-files"></em></button></div>
+					<!-- .copy-wrap -->
+				</div>
+				<ul class="share-links" style="display:none">
+					<li>Поделиться : </li>
+					<li><a href="#"><em class="fab fa-google-plus-g"></em></a></li>
+					<li><a href="#"><em class="fab fa-twitter"></em></a></li>
+					<li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+					<li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+				</ul>
+			</div>
+		</div>
+				<div class="d-sm-flex justify-content-center">
+
+			<div class="content-area card col-lg-12" style="border-radius:0 6px 6px 0">
+				<div class="card-innr">
+					<style>
+						#example1_filter2 {
+							display: none;
+						}
+
+						#example1_length {
+							display: none;
+						}
+
+						@media (max-width:500px) {
+							#example1_paginate {
+								display: inline-grid;
+							}
+						}
+
+						@media (max-width:451px) {
+							#example1 {
+								display: block !important;
+							}
+						}
+					</style>
+					<div id="example1_wrapper" class="dataTables_wrapper no-footer">
+						<div class="dataTables_length" id="example1_length"><label></label></div>
+						<div id="example1_filter2" class="dataTables_filter"><label></label></div>
+						<table id="example1" class="display table-responsive dataTable no-footer"
+							style="width: 100%; display: inline-table;" role="grid"
+							aria-describedby="example1_info">
+
+
+
+							<thead>
+								<tr role="row">
+									<th style="width: 72px;" class="text-center sorting_desc" tabindex="0"
+										aria-controls="example1" rowspan="1" colspan="1"
+										aria-sort="descending"
+										aria-label="ID: activate to sort column ascending">ID</th>
+									<th style="width: 84px;" class="text-center sorting_disabled"
+										rowspan="1" colspan="1" aria-label="Дата">Дата</th>
+									<th style="width: 204px;" class="text-center sorting_disabled"
+										rowspan="1" colspan="1" aria-label="Логин">Логин</th>
+									<th style="width: 72px;" class="text-center sorting" tabindex="0"
+										aria-controls="example1" rowspan="1" colspan="1" aria-label="Прибыль (Всего:): activate to sort column ascending">Прибыль (Всего:)</th>
+								</tr>
+							</thead>
+							<tbody class="">
+															<tr class="text-xs-center">
+									<td colspan="12">У вас нет рефералов</td>
+								</tr>
+														</tbody>
+						</table>
+						<div class="dataTables_info" id="example1_info" role="status" aria-live="polite">
+							Всего рефералов: <b>0</b></div>
+						<div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><a
+								class="paginate_button previous disabled" aria-controls="example1"
+								data-dt-idx="0" tabindex="0" id="example1_previous">Назад</a><span><a
+									class="paginate_button current" aria-controls="example1" data-dt-idx="1"
+									tabindex="0">1</a></span><a class="paginate_button next disabled"
+								aria-controls="example1" data-dt-idx="2" tabindex="0"
+								id="example1_next">Вперед</a></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .col -->
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#example1").dataTable({
+				"aoColumnDefs": [{
+					'bSortable': false,
+					'aTargets': [1, 2]
+				}],
+				"order": [
+					[0, "desc"]
+				]
+			});
+		});
+	</script>
+</div><!-- .container -->
+</div><!-- .container -->
+</div><!-- .page-content -->
+<div class="footer-bar">
+  <div class="container">
+   <div class="row align-items-center justify-content-center">
+    <div class="col-md-8">
+        <style>
+         ul.footer-links li {
+          display: inline;
+      }
+  </style>
+</div><!-- .col -->
+<div class="col-md-12 mt-12 mt-sm-12">
+
+   <ul class="footer-links" style="width: 100%; text-align:center;">
+    <li style="display:inline-block;"><a href="#" data-toggle="modal" data-target="#modalRules">Лицензионное соглашение</a></li>
+    <li style="display:inline-block;"><a href="#" data-toggle="modal" data-target="#modalNoAzart">Правила</a></li>
+    <a href="http://www.mykassa.org/"><img src="http://www.mykassa.org/img/buttons/mykassa-lightblue.png" title="Оплата через сайт"></a>
+</ul>
+
+</div><!-- .col -->
+</div><!-- .row -->
+</div><!-- .container -->
+</div><!-- .footer-bar -->
+<div class="modal fade" id="modalDeposit" tabindex="-1">
+	<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+		<div class="modal-content"><a class="modal-close" data-dismiss="modal" aria-label="Close"><em
+			class="ti ti-close"></em></a>
+			<div class="popup-body">
+
+
+				<p>Выберите способ оплаты:</p>
+				<input id="systemPay" style="display:none">
+				<input type="hidden" name="ps" id="ps_freekassa" value="freekassa">
+
+				<ul class="pay-list guttar-15px">
+					<input id='systemPay' style="display:none"></input>
+					<li class="pay-item" onclick="$('#ps_freekassa').val('3');"><input type="radio"
+						class="pay-check" name="pay-option" id="pay-coin"><label class="pay-check-label"
+						for="pay-coin">
+						<img src="assets/qiwipay.png" style="height: 35px;margin: 10px;" alt="pay-logo"></label>
+					</li>
+
+					<li class="pay-item" onclick="$('#ps_freekassa').val('1');"><input type="radio"
+						class="pay-check" name="pay-option" id="pay-paypal"><label class="pay-check-label"
+						for="pay-paypal"><img src="assets/fk-logo.png" alt="pay-logo"
+						style="height: 35px;margin: 10px;"></label></li>
+
+						<li class="pay-item" onclick="$('#ps_freekassa').val('2');"><input type="radio"
+							class="pay-check" name="pay-option" id="pay-paypal1"><label class="pay-check-label"
+							for="pay-paypal1"><img src="assets/pa.png" alt="pay-logo"
+							style="    height: 22px;width: 70px;margin-top: 16px;margin-bottom: 16px;"></label>
+						</li>
+					</ul>
+
+					<div style="display: flex;">
+						<div style="width: 50%;">
+							<label for="token-address" class="input-item-label">Сумма:</label>
+							<div class="input-item input-with-label">
+								<input class="input-bordered col-6" type="text" id="sum_freekassa" value="100" style="width: 100%;">
+								<span class="input-note">* Все комиссии берем на себя</span>
+							</div>
+						</div>
+
+						<div style="width: 50%; padding-left: 5%;">
+							<label for="token-address" class="input-item-label">Будет начислено:</label>	
+							<div class="input-item input-with-label">
+								<label style=" width: 100%;">
+									<input class="input-bordered col-6" type="text" id="withBonus" name="" readonly>
+								</label>
+								<span class="input-note" style="padding: 0">* С учетом действующих бонусов</span>
+							</div>	<!-- -->				
+						</div>
+					</div> 
+
+					
+					<script type="text/javascript">
+						sum_freekassa.oninput = function() {
+							var amount = this.value;
+							if (amount < 50) withBonus.value = this.value;
+							if (amount >= 50 && amount < 100) withBonus.value =   Math.round(amount * 1.1);
+							if (amount >= 100 && amount < 150) withBonus.value =  Math.round(amount * 1.15);
+							if (amount >= 150 && amount < 300) withBonus.value =  Math.round(amount * 1.3);
+							if (amount >= 300 && amount < 500) withBonus.value =  Math.round(amount * 1.4);
+							if (amount >= 500 && amount < 1000) withBonus.value = Math.round(amount * 1.5);
+							if (amount >= 1000 && amount < 2000) withBonus.value = Math.round(amount * 1.8);
+							if (amount >= 2000 && amount < 3000) withBonus.value = Math.round(amount * 2);
+							if (amount >= 3000 && amount < 4000) withBonus.value = Math.round(amount * 3);
+							if (amount >= 4000 && amount < 5000) withBonus.value = Math.round(amount * 4);
+							if (amount >= 5000) withBonus.value = Math.round(amount * 5);
+						};
+					</script>
+
+					<div>
+						<ul class="d-flex flex-wrap align-items-center guttar-30px">
+							<li><a onclick="deposit()"
+								class="btn btn-primary"
+								style="color:#fff; box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3);"
+								id='depositButton'>Далее</a></li>
+								<a id="error_deposit" style="color: rgb(255, 255, 255); display:none"
+								class="btn btnError bg-danger "></a>
+							</ul>
+						</div>	
+
+						<!--Временный бонус</!-->
+						<div class="gaps-2x"></div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">50р</span>
+									получи 
+									<span style="color: #1c65c9">+10%</span> в подарок!
+								</b>
+							</label>
+						</div>	
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">100р</span>
+									получи 
+									<span style="color: #1c65c9">+15%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">150р</span>
+									получи 
+									<span style="color: #1c65c9">+30%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">300р</span>
+									получи 
+									<span style="color: #1c65c9">+40%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">500р</span>
+									получи 
+									<span style="color: #1c65c9">+50%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">1000р</span>
+									получи 
+									<span style="color: #1c65c9">+80%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">2000р</span>
+									получи 
+									<span style="color: #1c65c9">+100%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">3000р</span>
+									получи 
+									<span style="color: #1c65c9">+200%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">4000р</span>
+									получи 
+									<span style="color: #1c65c9">+300%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<div style="border: 1px solid #e6eff5">							
+							<label style="padding: 5px; width: 100%;">
+								<b style="display: block; text-align: center;">
+									При пополнении от 
+									<span style="color: #c91c46">5000р</span>
+									получи 
+									<span style="color: #1c65c9">+400%</span> в подарок!
+								</b>
+							</label>
+						</div>
+
+						<hr>	
+
+						<div>
+							<table class="table tnx-table">
+								<thead>
+									<tr>
+										<th width="33%">Дата</th>
+										<th width="33%">Сумма</th>
+									</tr><!-- tr -->
+								</thead><!-- thead -->
+								<tbody id="lastDepN">
+																		<tr>
+										<td colspan="6" class="text-xs-center">История пуста</td>
+									</tr>
+																	</tbody><!-- tbody -->
+								<center id="loadpw" style="display:none">Загрузка...</center>
+							</table>
+						</div>
+
+						<script>				
+							function deposit() {
+								if ($('#ps_freekassa').val() > 3 || !$.isNumeric($('#ps_freekassa').val())) {
+									$('#error_deposit').show();
+									return $('#error_deposit').html('Укажите систему пополнения');
+								}
+								if ($('#sum_freekassa').val() == '') {
+									$('#error_deposit').show();
+									return $('#error_deposit').html('Введите сумму');
+								}
+
+								if (!$.isNumeric($('#sum_freekassa').val())) {
+									$('#error_deposit').show();
+									return $('#error_deposit').html('Введите корректную сумму');
+								}
+
+								$.ajax({
+									type: 'POST',
+									url: '/action',
+									data: {
+										type: "deposit",
+										system: $('#ps_freekassa').val(),
+										size: $('#sum_freekassa').val()
+									},
+									beforeSend: function(data) {
+										$('#loadpw').show();
+										$('#depositButton').addClass('disabled');
+									},
+									success: function(data) {
+										var obj = jQuery.parseJSON(data);
+										if ('success' in obj) {
+											window.location.href = obj.success.location;
+										}
+
+										if ('error' in obj) {
+											$('#error_deposit').show();
+											return $('#error_deposit').html(obj.error.text);
+										}
+
+									}
+								});
+
+							}
+
+							function getNowDeposits() {
+								if ($('#lastDepN').html() !== "") {
+									return;
+								}
+
+							}
+						</script>
+
+					</div>
+				</div><!-- .modal-content -->
+			</div><!-- .modal-dialog -->
+		</div><!-- Modal End -->
+
+
+		<div class="modal fade" id="withdraw" tabindex="-1" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+				<div class="modal-content"><a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+					<div class="popup-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="input-item input-with-label"><label for="swalllet"
+									class="input-item-label">Выберите систему </label><select
+									class="select-bordered select-block select2-hidden-accessible" id="hide_search"
+									onchange="withdrawSelect()" tabindex="-1" aria-hidden="true">
+									<optgroup label="Платежные системы">
+										<option value="4">Qiwi</option>
+										<option value="2">Payeer</option>
+										<option value="1">Яндекс.Деньги</option>
+									</optgroup>
+								<!-- <optgroup label="Мобильная связь (Россия)">
+								<option value="5">Билайн</option>
+								<option value="6">Мегафон</option>
+								<option value="7">МТС</option>
+								<option value="8">Теле 2</option>
+							</optgroup>
+							<optgroup label="Банковские карты (Россия)">
+								<option value="9">VISA</option>
+								<option value="10">MASTERCARD</option>
+							</optgroup> -->
+						</select></div><!-- .input-item -->
+					</div><!-- .col -->
+				</div><!-- .row -->
+				<div class="input-item input-with-label"><label for="token-address" class="input-item-label">Укажите
+				реквизиты:</label><input class="input-bordered" id="walletNumber" value=""><span
+				class="input-note" id="cardLL" style="display:none">Только для РФ</span></div>
+				<div class="input-item input-with-label"><label class="input-item-label">Сумма:</label><input
+					class="input-bordered" id="WithdrawSize" value=""></div>
+					<a id="error_withdraw" class="btn  btn-block btnError bg-danger "
+					style="display:none; color:#fff;margin-bottom:15px; margin: 0 auto"></a>
+					<a id="succes_withdraw" class="btn  btn-block btnSuccess"
+					style="display:none; color:#fff; cursor:default;  margin-bottom:10px;    background: linear-gradient(to right, rgb(10, 203, 144), rgb(43, 222, 109));">Выплата
+				успешно создана</a>
+				<div class="gaps-2x"></div>
+				<div class="d-sm-flex justify-content-between align-items-center"><button id="withB"
+					onclick="withdraw()"
+					class="btn btn-primary"
+					style="width:100px;box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3);">Вывести</button></div>
+
+
+					<script>
+
+						function removeWithdraw(id) {
+							$.ajax({
+								type: 'POST',
+								url: '/action',
+								data: {
+									type: "removeWithdraw",
+									id: id
+								},
+								success: function(data) {
+									var obj = jQuery.parseJSON(data);
+									if ('success' in obj) {
+										$('#' + id + '_his').hide();
+										$('#emptyHistory').hide();
+										$('#withdrawT').html(obj.success.add_bd);
+										updateBalance(obj.success.balance, obj.success.new_balance);
+									}
+									if ('ban' in obj) {
+										$('#error_withdraw').show();
+										$('#error_withdraw').html(obj.ban.text);
+										setTimeout(function() {
+											location.href = '/logout';
+										},1500);
+									}
+									if ('error' in obj) {
+										$('#error_withdraw').show();
+										return $('#error_withdraw').html(obj.error.text);
+									}
+								}
+							});
+						}
+					</script>
+
+					<script>
+						function withdraw() {
+							if ($('#WithdrawSize').val() == '' || $('#walletNumber').val() == '' || $('#hide_search').val() == '') {
+								$('#error_withdraw').show();
+								return $('#error_withdraw').html('Заполните все поля');
+							}
+							if ($('#walletNumber').val().length < 8) {
+								$('#error_withdraw').show();
+								return $('#error_withdraw').html('Номер/Кошелек от 8 цифр');
+							}
+
+							if($('#WithdrawSize').val() < 100)
+							{
+								$('#error_withdraw').show();
+								return $('#error_withdraw').html('Минимальная сумма вывода - 100 ');
+							}
+
+							$('#error_withdraw').show();
+							return $('#error_withdraw').html('Ваша сумма общего депозита менее 1000');
+							
+
+							$.ajax({
+								type: 'POST',
+								url: '/action',
+								beforeSend: function() {
+									$('#withdrawB').html('');
+									$('#error_withdraw').hide();
+									$('#succes_withdraw').hide();
+									$('#loader').css('display', '');
+								},
+								data: {
+									type: "withdraw",
+									system: $('#hide_search').val(),
+									size: $('#WithdrawSize').val(),
+									wallet: $('#walletNumber').val()
+								},
+								success: function(data) {
+
+
+									$('#withdrawB').html('Выплата');
+
+									$('#loader').css('display', 'none');
+									var obj = jQuery.parseJSON(data);
+									if ('success' in obj) {
+										$('#emptyHistory').hide();
+										$('#succes_withdraw').show();
+										var tt = $('#withdrawT').html();
+										$('#withdrawT').html(obj.success.add_bd + tt);
+										updateBalance(obj.success.balance, obj.success.new_balance);
+										setTimeout(function() {
+											$('#WithdrawSize').val('');
+											$('#walletNumber').val('');
+											$('#succes_withdraw').hide();
+										}, 2500);
+									}
+
+									if ('error' in obj) {
+										$('#error_withdraw').show();
+										return $('#error_withdraw').html(obj.error.text);
+									}
+									if ('ban' in obj) {
+										$('#error_withdraw').show();
+										$('#error_withdraw').html(obj.ban.text);
+										setTimeout(function() {
+											location.href = '/logout';
+										},1500);
+									}
+
+								}
+							});
+						}
+						function withdrawSelect() {
+							$('#walletNumber').val('');
+							var e = $('#hide_search').val();
+							if (e >= 4 && e <= 8) {
+								$('#nameWithdraw').html('Номер телефона:');
+								$('#walletNumber').attr('placeholder', '');
+							}
+							if (e >= 1 && e <= 3) {
+
+								if (e == 2) {
+									$('#walletNumber').attr('placeholder', 'P1000000');
+								}
+								if (e == 1) {
+									$('#walletNumber').attr('placeholder', '410011499718000');
+								}
+								if (e == 3) {
+									$('#walletNumber').attr('placeholder', 'R123456789000');
+								}
+								$('#nameWithdraw').html('Номер кошелька:');
+							}
+							if (e >= 9) {
+								$('#nameWithdraw').html('Номер карты:');
+								$('#cardLL').show();
+								if (e == 10) {
+									$('#walletNumber').attr('placeholder', '512107XXXX785577');
+								} else {
+									$('#walletNumber').attr('placeholder', '412107XXXX785577');
+								}
+							}
+						}
+
+					</script>
+
+
+
+
+
+					<div class="gaps-2x"></div>
+					<hr>
+					<div class="gaps-2x"></div>
+
+					<table class="table tnx-table table-responsive">
+						<thead>
+							<tr>
+								<th class="text-center">ID</th>
+								<th class="text-center">Дата</th>
+								<th class="text-center">Реквизиты</th>
+								<th class="text-center">Сумма</th>
+								<th class="text-center" style="width:10%">Статус</th>
+							</tr><!-- tr -->
+						</thead><!-- thead -->
+						<tbody id="withdrawT">
+															</tbody>
+							</table>
+							<center id="gnext"></center>
+
+						</div>
+					</div><!-- .modal-content -->
+				</div><!-- .modal-dialog -->
+			</div>
+
+
+			<div class="modal fade" id="startBonus" tabindex="-1">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content"><a href="index.html#" class="modal-close" data-dismiss="modal"
+						aria-label="Close"><em class="ti ti-close"></em></a>
+
+						<div class="popup-body">
+
+							<div class="form-step-head card-innr" style="border-top:0">
+								<div class="step-head">
+									<div class="step-number">01</div>
+									<div class="step-head-text">
+										<h4>Привяжите аккаунт Вконтакте</h4><a href="#"
+										class="btn btn-outline btn-dark btn-facebook " style="margin-top:10px"><em
+										class="fab fa-vk"></em><span>Привязать аккаунт</span></a>
+
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="form-step-head card-innr" style="border:0">
+								<div class="step-head">
+									<div class="step-number">02</div>
+									<div class="step-head-text">
+																				<h4>Вступите в нашу группу</h4><a href="https://vk.com/nvuti_wtf"
+											target="_blank">"https://vk.com/nvuti_wtf"</a>
+										</div>
+									</div>
+								</div>
+								<div class="gaps-1x"></div>
+								<a class="btn btn-primary" id="bonBut" onclick="getBonus()"
+								style="box-shadow: 0 5px 23px 0 rgba(0, 125, 255, 0.3);color:#fff;margin:0 auto;display: table;">Получить
+							бонус</a>
+							<a class="btn" id="success_bonuss"
+							style="background: linear-gradient(to right, rgb(10, 203, 144), rgb(43, 222, 109));color:#fff;margin:0 auto; display: none;">Бонус
+						получен</a>
+						<center id="error_bonuss1" style="margin-top:15px;display: none;"><a id="error_bonuss"
+							class="btn btnError bg-danger " style="color:#fff;margin-top:10px auto;"></a></center>
+
+
+							<div class="gaps-4x"></div>
+							<center id="xrqexr" style="font-size:11px;margin-top:15px;opacity:0.7;cursor:pointer"
+							onclick="hideBonus()">Больше не показывать предложение</center>
+
+							<script>
+								function getBonus() {
+
+									$.ajax({
+										type: 'POST',
+										url: 'action.php',
+										beforeSend: function (data) {
+											$('#bonBut').addClass('disabled');
+											$('#bonBut').html(
+												'<div class="loader" style="height:23px;width:23px"></div>');
+										},
+										data: {
+											type: 'getBonus',
+											sid: Cookies.get('sid'),
+											a: Cookies.get('ab')
+										},
+										success: function (data) {
+											$('#success_bonuss').hide();
+											$('#error_bonuss1').hide();
+											$('#bonBut').removeClass('disabled');
+											$('#bonBut').html('Получить бонус');
+											var obj = jQuery.parseJSON(data);
+											if ('success' in obj) {
+
+												$('#bonBut').hide();
+												$('#xrqexr').hide();
+									//Cookies.set('ab', '1'); 
+									$('#success_bonuss').css('display', 'table');
+									updateBalance(obj.success.balance, obj.success.new_balance);
+									window.location.href = '';
+									return;
+
+								}
+								if ('error' in obj) {
+									$('#error_bonuss1').show();
+									return $('#error_bonuss').html(obj.error.text);
+								}
+							}
+						});
+								}
+
+
+								function hideBonus() {
+									$.ajax({
+										type: 'POST',
+										url: 'action.php',
+										data: {
+											type: "hideBonus",
+											sid: Cookies.get('sid'),
+										},
+										success: function (data) {
+											var obj = jQuery.parseJSON(data);
+											if ('success' in obj) {
+												window.location.href = '';
+											}
+										}
+									});
+								}
+							</script>
+						</div>
+					</div><!-- .modal-content -->
+				</div><!-- .modal-dialog -->
+			</div><!-- Modal End -->
+
+
+			<div class="modal fade show" id="modalRules" tabindex="-1" style="display: none;">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content"><a class="modal-close" data-dismiss="modal" aria-label="Close"><em
+						class="ti ti-close"></em></a>
+						<div class="popup-body">
+							<div class="static" style="font-size: 12px;">
+								<h1>Пользовательское соглашение</h1>
+								<h3>1. ПРЕДМЕТ И ОБЩИЕ ПОЛОЖЕНИЯ</h3>
+								1.1. Настоящее соглашение представляет собой официальное предложение (оферта) на пользование
+								услугами сервиса «NVUTI» и его "зеркал" (далее – «Сервис»), адресованного дееспособным
+								физическим лицам, принявшим (акцептовавшим) настоящую оферту на перечисленных ниже условиях.
+								<br>
+								1.2. В соответствии с п. 2 ст. 437 ГК РФ данный документ является публичной офертой и в случае
+								принятия изложенных ниже условий, лицо, осуществившее акцепт настоящей оферты (пользователь),
+								становится Участником проекта. В соответствии с п. 3 ст. 438 ГК РФ акцепт оферты равносилен
+								заключению договора на условиях, изложенных в оферте.
+								<br>
+								1.3. Указанное в настоящем Соглашении безоговорочно принимается Участником.
+								<br>
+								1.4. Услугами Сервиса могут пользоваться исключительно лица, достигшие совершеннолетия (18 лет).
+								<br>
+								1.5. Сервис представляет собой систему добровольных пожертвований, принадлежит его организатору
+								и находится в сети Интернет непосредственно по адресу <a
+								href="index.html">NVUTI</a>.
+								<br>
+								1.6. Каждый Участник получает доступ к системе пожертвований на добровольной основе, с
+								одновременной возможностью получить пожертвование от иных Участников Сервиса.
+								<br>
+								1.7. Отношения между Сервисом и Участником считаются надлежаще оформленными с момента акцепта
+								оферты и не требуют двустороннего подписания в письменном виде.
+								<br>
+								1.8. Акцептом настоящей оферты для Участника признается начало использования Сервиса, его
+								отдельной функции, либо прохождение процедуры регистрации на сайте.
+								<br>
+								1.9. Независимо от факта регистрации или авторизации Пользователя на Сайте, использование Сайта,
+								включая просмотр размещенной на Сайте информации, означает согласие Участника с настоящим
+								соглашением.
+								<br>
+								1.10. Используя и/или посещая любые разделы сайта, Участник: <br>
+								• соглашается использовать средства электронной коммуникации для заключения договоров; <br>
+								• отказывается от любых применимых в данном случае прав или требований, для которых необходима
+								собственноручная подпись, в той степени, в которой это допускается любым применимым
+								законодательным актом.
+								<br>
+								1.11. Если Участник не согласен принять и следовать условиям Соглашения, он не должен
+								регистрировать аккаунт и/или прекратить использовать аккаунт. Дальнейшее использование Сервиса
+								будет рассматриваться как согласие Участника с условиями настоящего Соглашения.
+								<br>
+								1.12. Участник осознает и согласен с тем, что он должен самостоятельно оценивать все риски,
+								связанные с использованием Сервиса, включая оценку его надежности, полноты или полезности.
+								<br>
+								1.13. Администрация Сервиса осуществляет техническую поддержку Участника по вопросам, связанным
+								с функциональностью Сервиса и с особенностями эксплуатации Сервиса.
+								<br>
+								<h3>2. УЧЁТНАЯ ЗАПИСЬ УЧАСТНИКА</h3>
+								2.1. Способом непосредственной регистрации учетной записи является авторизация Участника с
+								помощью регистрационных данных социальной сети «Вконтакте».
+								<br>
+								2.2. Участник принимает на себя обязательство хранения конфиденциальности информации,
+								размещенной в его учетной записи, и доступа к своей учетной записи.
+								<br>
+								2.3. В случае непосредственного нарушения Участником условий настоящего соглашения, а также
+								действующих законов РФ, Сервис вправе в любое время заблокировать или удалить учетную запись
+								Участника без возможности ее восстановления и без объяснения причин.
+								<br>
+								2.4. Участник обязуется своевременно сообщить о противозаконном доступе к его учетной записи,
+								противозаконном использовании его учетной записи, по средствам технической поддержки Сервиса.
+								<br>
+								2.5. Сервис не несет ответственности за разглашение учетной записи Участника третьим лицам и в
+								случае несанкционированного доступа третьих лиц к учетной записи Участника.
+								<br>
+								<h3>3. ПРАВИЛА ПОЛЬЗОВАНИЯ СЕРВИСОМ. ВЫИГРЫШ.</h3>
+								3.1. Пополнение баланса в Сервисе осуществляется Участником добровольно.
+								<br>
+								3.2. Сумма добровольного пожертвования определяется Участником исключительно по собственному
+								усмотрению.
+								<br>
+								3.3. Участник пополняет собственный счет на Сервисе посредством специализированных платежных
+								платформ «Free-Kassa» и «Piastrix». Для пополнения счёта Участнику необходимо предварительно
+								перейти в личный кабинет, затем нажать «Пополнить баланс».
+								<br>
+								3.4. Для получения пожертвования Участнику необходимо сделать ставку в рублях РФ.
+								<br>
+								3.5. Выигрыш в Сервисе представляет собой получение Участником пожертвования, сумма которого
+								генерируется случайным образом (билетный алгоритм).
+								<br>
+								3.6. Для вывода денежных средств Участнику следует предварительно перейти в личном кабинете,
+								затем нажать «Вывести». Для вывода денежных средств Участнику необходимо пополнить свой баланс
+								минимум на указанную в настоящее время на сайте сумму.
+								<br>
+								3.7. Минимальная сумма вывода составляет 100 рублей.
+								<br>
+								3.8. Для вывода денежных средств необходимо сделать ставки на 50% от суммы пополнения, при этом - общая сумма всех пополнений на сайте должна составлять более 1000 рублей.
+								<br>
+								3.9. Игровые средства после подачи соответствующего запроса (запрос на вывод средств) Участником
+								зачисляются Сервисом на игровой счет другого Участника в течение 48 часов. В том случае, если по
+								истечению данного времени деньги не поступили на счёт, Участнику следует обратиться за помощью к
+								специалистам технической поддержки Сервиса любым удобным способом.
+								<br>
+								3.10. Выигранные при использовании бонусов денежные средства нельзя снять со счета, пока все
+								бонусы не отыграны х25. Отыграть бонус х25 – значит сделать в играх ставок в 25 раз больше суммы
+								бонуса. Например, если Участник получил бонус в размере 100 рублей, то необходимое количество
+								ставок, обозначаемое словом, равно 2500 рублей.
+								<br>
+								3.11. Участник может отыграть бонусы на любой игре на сайте.
+								<br>
+								3.12. Администрациея в праве потребовать скан паспорта или другого документа, подтверждающего личность игрока при выводе средстсв при подозрении его в мошенничестве.
+								<br>
+								3.13. До полного отыгрывания бонусов выплаты выигрышей не производятся.
+								<br>
+								3.14. Общая сумма депозита пользователя для вывода должна быть более указанной в настоящее время на сайте.
+								<br>
+								<h3>4. КОНФИДЕНЦИАЛЬНОСТЬ</h3>
+								4.1. Сервис гарантирует абсолютную конфиденциальность информации, предоставленной Участником
+								Сервису.
+								<br>
+								4.2. Личные данные Участника могут быть представлены третьим лицам исключительно в случаях
+								непосредственного нарушения действующих законов РФ, в случаях оскорбительного поведения, клеветы
+								в отношении третьих лиц.
+								<br>
+								<h3>5. КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО</h3>
+								5.1. Размещение информации, содержащей поддельные (неправдивые) данные.
+								<br>
+								5.2. Передача любой информации или материалов, способных повлечь за собой несущественный, или
+								существенный вред третьим лицам, нарушить действующий закон РФ в отношении третьих лиц.
+								<br>
+								5.3. Размещение информации неправдоподобного характера с целью получения противозаконного
+								доступа к учетной записи.
+								<br>
+								5.4. Размещение информации общерелигиозного, общеполитического характера.
+								<br>
+								5.5. Регистрация Участником более чем одной учетной записи.
+								<br>
+								5.6. Передача информации иным, третьим лицам, содержащей данные для доступа к личной учетной
+								записи Участника.
+								<br>
+								5.7. Размещение оскорблений, проявление агрессии касательно Участников или администрации
+								Сервиса.
+								<br>
+								5.8. Размещение юзерпика, содержащего элементы разврата, агрессии в любых ее проявлениях,
+								элементы рекламного характера.
+								<br>
+								5.9. Наносить вред работе системы Сервиса.
+								<br>
+								5.10. Размещение информации, способной повлечь за собой вред третьим лицам.
+								<br>
+								<h3>6. ОТВЕТСТВЕННОСТЬ СТОРОН</h3>
+								6.1. Пополняя баланс на Сервисе любыми платежными системами, тратя средства со своего баланса,
+								Участник берет на себя полную ответственность за свои действия.
+								<br> 6.2. Сервис никак не принуждает, не настаивает делать какие-либо действия. Также как не
+								призывает и не мотивирует увеличить средства на Сервисе.
+								<br> 6.3. Сервис не дает 100% гарантии, что ставки на играх Сервиса даст возможность увеличить
+								средства Участника на его балансе.
+								<br> 6.4. Участник соглашается с тем, что в случае потери средств со своего баланса (проигрыша)
+								в той или иной игре, Сервис возврат денежных средств Участнику не производит.
+								<br> 6.5. Сервис несет ответственность за хранение и обработку персональных данных Участника,
+								обеспечивает конфиденциальность этих данных в процессе их обработки. Сервис не несет
+								ответственности за персональные данные Участника, похищенные в результате хакерских атак.
+								<br> 6.6. Сервис не несет ответственности за не работу сайта в связи с проблемами хостинга,
+								ddos-атаками на сайт или хостинг, иных каких-то не зависящих от Сервиса причин.
+								<br>
+								<h3>7. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</h3>
+								7.1. Соглашение вступает в силу с даты акцепта и действует до тех пор, пока Участник или Сервис
+								не расторгнут его, что может быть осуществлено в любое время. В случае расторжения Соглашения
+								Участник незамедлительно прекращает использование Сервиса.
+								<br>7.2. Право пользования Сервисом прекращается и Соглашение расторгается автоматически без
+								уведомления об этом Участника, если Участником не будут соблюдаться условия настоящего
+								Соглашения.
+								<br>7.3. В случае отзыва настоящего Соглашения в течение срока его действия настоящее Соглашение
+								считается прекращенным с момента отзыва. Отзыв осуществляется путем размещения соответствующей
+								информации на Сервисе.
+								<br>7.4. Участник не вправе уступать или передавать свои права по настоящему Соглашению без
+								предварительного письменного согласия Сервиса. Администрация Сервиса может уступить все права и
+								обязательства по настоящему Соглашению дочерней компании, аффилированному лицу или
+								правопреемнику без согласия Участника.
+								<br>7.5. В случае возникновения споров и разногласий, возникших в связи с исполнением настоящего
+								Соглашения, в том числе, но не ограничиваясь, в связи с использованием Сервиса должны решаться
+								путем переговоров между сторонами, которые не будут превышать 30 (тридцать) календарных дней с
+								даты получения первоначального уведомления соответствующей стороной. В случае недостижения
+								согласия между сторонами по спорным вопросам, все споры и разногласия должны рассматриваться
+								судом по месту регистрации администрации Сервиса.
+								<br>7.6. Сервис оставляет за собой право в одностороннем порядке вносить изменения в настоящее
+								Соглашение. Изменения вступают в силу с момента публикации, если иной срок отдельно не оговорен.
+								<br>7.7. Участник обязан самостоятельно отслеживать изменения в настоящем Соглашении. В случае
+								если вследствие невыполнения настоящего обязательства у Участника возникли убытки, Сервис не
+								несет за них никакой ответственности.
+								<br>7.8. Использование Сервиса после внесения изменений означает безусловное принятие (акцепт)
+								Участником условий обновленной редакции Соглашения.
+								<br>7.9. Если какое-либо положение настоящего Соглашения будет признано недействительным
+								компетентным государственным органом, остальные положения остаются неизменными и сохраняют
+								полную силу и действие.
+								<br>7.10. Во всем остальном, что не предусмотрено настоящим Соглашением, стороны руководствуются
+								действующим законодательством Российской Федерации.
+								<br>7.11. Все объекты Сервиса, в том числе элементы дизайна, текст, графические изображения,
+								другие объекты, являются объектами исключительных прав Сервиса. Объекты не могут быть
+								использованы без предварительного разрешения правообладателя. Использование Участником объектов
+								в личных, некоммерческих, коммерческих целях, возможно при условии сохранения всех знаков охраны
+								авторского права, товарных знаков, и сохранении соответствующего объекта в неизменном виде.
+								Исключение составляют случаи, прямо предусмотренные законодательством РФ или настоящим
+								Соглашением.
+								<br>7.12. Заключая соглашение и передавая персональные данные при регистрации на Сайте, Участник
+								выражает согласие на предоставление своих персональных данных для целей обработки и хранения
+								Сервисом в соответствии с Политикой конфиденциальности в отношении обработки персональных
+								данных, размещенной на Сайте. Обработка внесенных Участником при заключении соглашения
+								персональных данных осуществляется на основании ФЗ «О персональных данных» №152-ФЗ от
+								27.07.2006.
+
+							</div>
+						</div>
+					</div><!-- .modal-content -->
+				</div><!-- .modal-dialog -->
+			</div>
+
+
+			<div class="modal fade show" id="modalNoAzart" tabindex="-1" style="display: none;">
+				<div class="modal-dialog modal-dialog-md modal-dialog-centered">
+					<div class="modal-content"><a class="modal-close" data-dismiss="modal" aria-label="Close"><em
+						class="ti ti-close"></em></a>
+						<div class="popup-body">
+							<div class="static">
+								<h3>1. Является ли данный проект азартной игрой?</h3>
+								<div class="inner">
+									Однозначно нет.
+									<br> Проект не являет собой азартную игру.
+									<br> Распределение пожертвований! Каждый участник проекта получает доступ к системе
+									пожертвований на добровольной основе, при этом, с одновременной возможностью получить
+									пожертвование от иных пользователей в рамках проекта.
+								</div>
+								<h3>2. Каким образом ведется работа системы пожертвований на добровольной основе? </h3>
+								<div class="inner">
+									<br> 2.1. Пополнение баланса в системе осуществляется добровольно.
+									<br> 2.2. Сумма добровольного пожертвования определяется участником системы исключительно по
+									собственному усмотрению.
+									<br> 2.3. Для получения пожертвования участнику проекта необходимо сделать ставку.
+									<br> 2.4. Сумма пожертвования генерируется системой случайным образом.
+								</div>
+								<h3>3. Что представляет собой выигрыш в рамках данного проекта?</h3>
+								<div class="inner">
+									Выигрыш в системе представляет собой получение участником проекта внутриигровых денег. Сумма
+									выигрыша генерируется системой случайным образом.
+								</div>
+								<h3>4. Существуют ли гарантии того, что проект не относится к азартным играм?</h3>
+								<div class="inner">
+									У нас нет проигравших!
+									<br>В рамках данного проекта каждый из участников может сделать пожертвование! В свою
+									очередь система служит исключительно для генерирования случайного числа.
+									<br>Предварительно, все участники системы принимают соответствующее <a href="index.html#"
+									data-toggle="modal" data-target="#modalRules">Пользовательское соглашение</a>.
+								</div>
+								<div class="cls"></div>
+							</div>
+						</div>
+					</div><!-- .modal-content -->
+				</div><!-- .modal-dialog -->
+			</div><script src="/js/jquery.bundle.js"></script>
+<script src="/js/datatables.min.js"></script>
+<script src="/js/script.js?v=2"></script>
+<script src="/js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
